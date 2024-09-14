@@ -49,8 +49,5 @@ jobs:
       # Passo 5: Rodar análise de código com SonarCloud
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@v2
-        with:
-          projectKey: <your-project-key>
-          organization: <your-organization-key>
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
